@@ -1,20 +1,20 @@
 %bcond_without  tests
 
 Name:           poker-engine
-Version:        1.0.24
+Version:        1.0.25
 Release:        %mkrel 1
 Epoch:          0
 Summary:        Python library that implements poker rules
 Group:          Development/Python
 License:        GPL
 URL:            http://pokersource.org/poker-engine/
-Source0:        http://download.gna.org/pokersource/sources/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{epoch}:%{version}-%{release}-root
-BuildArch:      noarch
-BuildRequires:  pypoker-eval-devel >= 0:133.0
+Source0:        http://download.gna.org/pokersource/sources/poker-engine-%{version}.tar.gz
+BuildRequires:  pypoker-eval-devel
 BuildRequires:  python-devel
 BuildRequires:  python-libxslt
 BuildRequires:  rsync
+BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{epoch}:%{version}-%{release}-root
 
 %description
 This is a python library that implements poker rules according
@@ -26,7 +26,7 @@ poker client.
 Summary:        Python library that implements poker rules
 Group:          Development/Python
 Provides:       %{name} = %{epoch}:%{version}-%{release}
-Requires:       pypoker-eval >= 0:133.0
+Requires:       pypoker-eval
 Requires:       rsync
 
 %description -n python-pokerengine
@@ -40,7 +40,7 @@ Summary:        Poker rule implementation library development files
 Group:          Development/Python
 Provides:       %{name}-devel = %{epoch}:%{version}-%{release}
 Requires:       python-pokerengine = %{epoch}:%{version}-%{release}
-Requires:       pypoker-eval-devel >= 0:133.0
+Requires:       pypoker-eval-devel
 
 %description -n python-pokerengine-devel
 This package contains files required to build applications that use
@@ -78,5 +78,3 @@ poker-engine.
 %files -n python-pokerengine-devel
 %defattr(-,root,root,-)
 %{_datadir}/pkgconfig/%{name}.pc
-
-
