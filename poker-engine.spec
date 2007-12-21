@@ -14,6 +14,7 @@ BuildRequires:  python-devel
 BuildRequires:  python-libxslt
 BuildRequires:  rsync
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{epoch}:%{version}-%{release}-root
 
 %description
 This is a python library that implements poker rules according
