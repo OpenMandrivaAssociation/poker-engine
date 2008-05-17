@@ -1,12 +1,12 @@
 %bcond_without  tests
 
 Name:           poker-engine
-Version:        1.1.0
+Version:        1.2.0
 Release:        %mkrel 1
 Epoch:          0
 Summary:        Python library that implements poker rules
 Group:          Development/Python
-License:        GPL
+License:        GPLv3+
 URL:            http://pokersource.org/poker-engine/
 Source0:        http://download.gna.org/pokersource/sources/poker-engine-%{version}.tar.gz
 BuildRequires:  pypoker-eval-devel
