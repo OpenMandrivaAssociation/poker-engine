@@ -2,7 +2,7 @@
 
 Name:           poker-engine
 Version:        1.2.0
-Release:        %mkrel 1
+Release:        %mkrel 2
 Epoch:          0
 Summary:        Python library that implements poker rules
 Group:          Development/Python
