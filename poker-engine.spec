@@ -1,8 +1,8 @@
 %bcond_without  tests
 
 Name:           poker-engine
-Version:        1.2.0
-Release:        %mkrel 2
+Version:        1.3.2
+Release:        %mkrel 1
 Epoch:          0
 Summary:        Python library that implements poker rules
 Group:          Development/Python
@@ -57,6 +57,8 @@ poker-engine.
 %{__rm} -rf %{buildroot}
 %{makeinstall_std}
 
+%find_lang %name
+
 %if %with tests
 %check
 %{make} check
@@ -65,7 +67,7 @@ poker-engine.
 %clean
 %{__rm} -rf %{buildroot}
 
-%files -n python-pokerengine
+%files -n python-pokerengine -f %name.lang
 %defattr(-,root,root,-)
 %doc AUTHORS ChangeLog COPYING NEWS README
 %{_mandir}/man8/*.8*
@@ -73,7 +75,6 @@ poker-engine.
 %{_datadir}/%{name}/conf/*.xml
 %{python_sitelib}/pokerengine
 %config(noreplace) %{_sysconfdir}/%{name}/*
-%lang(fr) %{_datadir}/locale/fr/LC_MESSAGES/poker-engine.mo
 
 %files -n python-pokerengine-devel
 %defattr(-,root,root,-)
