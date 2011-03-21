@@ -1,7 +1,7 @@
 %bcond_without  tests
 
 Name:           poker-engine
-Version:        1.3.5
+Version:        1.3.6
 Release:        %mkrel 1
 Epoch:          0
 Summary:        Python library that implements poker rules
