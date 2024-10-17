@@ -7,7 +7,7 @@ Epoch:          0
 Summary:        Python library that implements poker rules
 Group:          Development/Python
 License:        GPLv3+
-URL:            http://pokersource.org/poker-engine/
+URL:            https://pokersource.org/poker-engine/
 Source0:        http://download.gna.org/pokersource/sources/poker-engine-%{version}.tar.gz
 BuildRequires:  pypoker-eval-devel
 BuildRequires:  python-devel
