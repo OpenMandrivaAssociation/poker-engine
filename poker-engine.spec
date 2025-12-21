@@ -9,6 +9,7 @@ Group:          Development/Python
 License:        GPLv3+
 URL:            https://pokersource.org/poker-engine/
 Source0:        http://download.gna.org/pokersource/sources/poker-engine-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:  pypoker-eval-devel
 BuildRequires:  python-devel
 BuildRequires:  python-libxslt
